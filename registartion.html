@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <section class="registration">
+        <div class="form">
+          <h1>Registration Form</h1>
+          <form>
+            <div class="f">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="f">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="f">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+            </div>
+            <div class="f">
+              <label for="gender">Gender:</label>
+              <select id="gender" name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="f">
+              <label for="age">Age:</label>
+              <input type="number" id="age" name="age" min="18" required>
+            </div>
+            <div class="f">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    
+</body>
+</html>
