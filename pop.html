@@ -3,26 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="pop.css">
+    <title>FlowerShop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .popWindow {
+            flex: 0 0 48%;
+            max-height: calc(50vh - 40px);
+            overflow: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            color: #007bff;
+            margin-top: 0;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
-<body class="popWindow">
-    <section class="popWindow">
-        <h1>
-            FlowerShop:
-        </h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, atque ipsa omnis, nemo minima fuga possimus quia libero provident dolorum totam! Sunt illum vitae nemo ipsam possimus in quis. Soluta?
-            Fuga ab sunt sapiente aut sed provident magni sit totam laboriosam, omnis optio quasi? Hic ducimus exercitationem iusto quas, provident quo ab dolorum quaerat reprehenderit, maiores alias. A, totam nemo.
-            Impedit quasi reiciendis laboriosam natus quisquam beatae adipisci. Nam eum ipsum doloremque molestias consectetur laudantium doloribus molestiae accusamus quod. Facilis, est. Corrupti fuga voluptatem cum nesciunt porro officia ut iste.
-            Nesciunt placeat alias dicta odit ipsa, eveniet voluptates ratione laudantium non magni autem exercitationem dolorem dolor. Soluta iure exercitationem qui, amet omnis, corporis delectus facilis deserunt quae nam quod et!
-            Necessitatibus magnam neque maxime minima perferendis ipsum mollitia cum deleniti aperiam provident voluptas illum suscipit error sunt temporibus, voluptatum rerum sapiente nam laudantium id harum quos. Quibusdam iure blanditiis fugit.
-        </p>
-    </section>
-    <section class="popWindow">
-        <h2>CEO speaks</h2>
-        
-        <video controls src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"></video>
-    </section>
+<body>
+    <div class="container">
+        <section class="popWindow">
+            <h1>FlowerShop:</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, atque ipsa omnis, nemo minima fuga possimus quia libero provident dolorum totam! Sunt illum vitae nemo ipsam possimus in quis. Soluta?
+                Fuga ab sunt sapiente aut sed provident magni sit totam laboriosam, omnis optio quasi? Hic ducimus exercitationem iusto quas, provident quo ab dolorum quaerat reprehenderit, maiores alias. A, totam nemo.
+                Impedit quasi reiciendis laboriosam natus quisquam beatae adipisci. Nam eum ipsum doloremque molestias consectetur laudantium doloribus molestiae accusamus quod. Facilis, est. Corrupti fuga voluptatem cum nesciunt porro officia ut iste.
+                Nesciunt placeat alias dicta odit ipsa, eveniet voluptates ratione laudantium non magni autem exercitationem dolorem dolor. Soluta iure exercitationem qui, amet omnis, corporis delectus facilis deserunt quae nam quod et!
+                Necessitatibus magnam neque maxime minima perferendis ipsum mollitia cum deleniti aperiam provident voluptas illum suscipit error sunt temporibus, voluptatum rerum sapiente nam laudantium id harum quos. Quibusdam iure blanditiis fugit.
+            </p>
+        </section>
+        <section class="popWindow">
+            <h2>CEO speaks</h2>
+            <div class="video-container">
+                <video controls src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"></video>
+            </div>
+        </section>
+    </div>
 </body>
 </html>

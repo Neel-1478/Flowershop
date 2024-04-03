@@ -1,33 +1,117 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Examination Form</title>
-    <link rel="stylesheet" href="exam.css">
-  </head>
-  <body>
-    <h1> Knowledge Test </h1>
-    <form >
-        <div>
-            <label for="question1">Question 1:</label><br>
-      <p>Colour of Rose:</p>
-      <input type="radio" id="question1A" name="question1" value="false"> <label for="question1">A. Blue</label><br>
-      <input type="radio" id="question1B" name="question1" value="true"> <label for="question1">B. Red</label><br>
-      <input type="radio" id="question1C" name="question1" value="false" > <label for="question1">C. None of the above</label><br>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examination Form</title>
+  <link rel="stylesheet" href="exam.css">
+</head>
+<style>body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
 
-        </div>
-      
-        <div>
-            <label for="question1">Question 2:</label><br>
-      <p>which Flower moves with sun:</p>
-      <input type="radio" id="question2A" name="question2" value="true"> <label for="question1">A. Sun-Flower</label><br>
-      <input type="radio" id="question2B" name="question2" value="false"> <label for="question1">B. Rose</label><br>
-      <input type="radio" id="question2C" name="question2" value="false" > <label for="question1">C. None of the above</label><br>
-      <br>      
-      <input type="submit" onclick="calcMarks()">
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+main {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  text-align: left;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+.submit {
+  text-align: center;
+  margin-top: 20px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+</style>
+<body>
+  <header>
+    <h1>Knowledge Test</h1>
+  </header>
+  <main>
+    <form>
+      <div class="question">
+        <label for="question1">Question 1:</label><br>
+        <p>What is the color of a rose?</p>
+        <input type="radio" id="question1A" name="question1" value="false"> <label for="question1A">A. Blue</label><br>
+        <input type="radio" id="question1B" name="question1" value="true"> <label for="question1B">B. Red</label><br>
+        <input type="radio" id="question1C" name="question1" value="false"> <label for="question1C">C. None of the above</label><br>
+      </div>
+      <div class="question">
+        <label for="question2">Question 2:</label><br>
+        <p>Which flower moves with the sun?</p>
+        <input type="radio" id="question2A" name="question2" value="true"> <label for="question2A">A. Sunflower</label><br>
+        <input type="radio" id="question2B" name="question2" value="false"> <label for="question2B">B. Rose</label><br>
+        <input type="radio" id="question2C" name="question2" value="false"> <label for="question2C">C. None of the above</label><br>
+      </div>
+      <div class="submit">
+        <input type="submit" value="Submit" onclick="calcMarks()">
+      </div>
     </form>
-
-        </div>
-    <script src="script.js"></script>    
-      
-  </body>
+  </main>
+  <footer>
+    <p>&copy; 2024 Knowledge Test. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
 </html>
